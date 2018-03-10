@@ -1,18 +1,18 @@
 # Coursera *Getting and Cleaning Data* Final Week Project - Code Book
 
-##Data Overview
+## Data Overview
 File name: *tidy.txt*  
 Number of observations: 180  
 Number of variables: 68
 
-##Summary
+## Summary
 This is the Code Book for *tidy.txt*. The original data from which this dataset was derived is: [link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 *tidy.txt* takes a subset of the variables in the original dataset and calculates the average of each variable for each activity and each subject. That is to say that each subject performed each of the 6 activities (e.g. WALKING, SITTING etc.) a number of times. For each one of the subjects, the tidy data set calculates the average value of each type of reading for each of the 6 activities.
 
 A full description of how the data has been manipulated from the original dataset is included in the README file.
 
-##Features
+## Features
 
 subject
  : An integer between 1 and 30 identifying the subject performing the activity  

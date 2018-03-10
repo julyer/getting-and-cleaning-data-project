@@ -11,8 +11,8 @@ The main task for this assignment was to take the data collected from the study 
 
 ## About the original data
 
-The original data folder and the data description are available from this site:
-[link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+The original data folder and the data description are available from here:
+[Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 The data are contained in a zip file in the folder *UCI HAR Dataset*. For the purposes of this assignment, the data contained in the *Inertial Signals* folders were ignored as this data would have been stripped out again in the creation of the new tidy dataset.
 
@@ -20,7 +20,7 @@ Information about how the original data has been gathered and a description of t
 
 ## Transforming the original dataset
 
-The file run_analysis.R performs the transformation from the original dataset to the final tidy.txt.
+The file run_analysis.R performs the transformation from the original dataset to the final *tidy.txt*.
 
 These are the steps that were used to transform the data and some of the decisions I made regarding the more subjective areas of the assignment.
 
@@ -44,7 +44,7 @@ if (!file.exists("UCI HAR Dataset"))
 
 The original data has been split into test and training data.
 
-###Read in both the test and training data
+### Read in both the test and training data
 
 *testData* and *trainData* are the set of processed sensor readings obtained from the accelerometer and gyroscope from the phone worn by each of the 30 subjects as they performed the activities. The different types of readings are recorded in the various features in this dataset.
 
@@ -90,7 +90,7 @@ meanStdData <- fullData[, featureIndex]
 ```
 ## 3. Use descriptive activity names to name the activities in the data set
 
-Change the activity column to the descriptive activity names using activity_labels.txt file as reference. 
+Change the activity column to the descriptive activity names using *activity_labels.txt* from the original data zip file as reference. 
 
 Drop column with activity numbers as they have been replaced by descriptions. (This step is not strictly speaking necessary but I found it a bit confusing as this column became column 1 after the merge and it shifted everything over by one column and confused the hell out of me.)
 

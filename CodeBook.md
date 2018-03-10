@@ -69,8 +69,8 @@ The set of variables that were estimated from these signals for the tidy dataset
 mean: Mean value  
 std: Standard deviation  
 
-For each of the above readings ending in XYZ would result in 6 features in the new tidy dataset. For example:
-tBodyGyroJerk-XYZ would become:
+Each of the above signals ending in XYZ would result in 6 individual features in the new tidy dataset. For example:
+*tBodyGyroJerk-XYZ* would become:
 * tBodyGyroJerk-mean-x
 * tBodyGyroJerk-mean-y
 * tBodyGyroJerk-mean-z
@@ -78,9 +78,11 @@ tBodyGyroJerk-XYZ would become:
 * tBodyGyroJerk-std-y
 * tBodyGyroJerk-std-z
 
-Readings that don't end in XYZ would result in 2 features. 
+Signals that don't end in XYZ would result in 2 features. 
 For example *fBodyGyroJerkMag* would become:
 * fBodyGyroJerkMag-mean
 * fBodyGyroJerkMag-std
+
+**From the data collected in the original data set, the values for each feature column in the tidy dataset are the calculated *mean* of the set of readings for that feature for each subject performing each activity.**
 
 For more information on the feature selection and variable name changes, please see the README file.

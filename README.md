@@ -9,7 +9,7 @@ This project contains the following files:
 
 The main task for this assignment was to take the data collected from the study *Human Activity Recognition Using Smartphones* and tidy and manipulate it to produce a new tidy dataset that is saved to *tidy.txt*.
 
-##About the original data
+## About the original data
 
 The original data folder and the data description are available from this site:
 [link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
@@ -18,13 +18,13 @@ The data are contained in a zip file in the folder *UCI HAR Dataset*. For the pu
 
 Information about how the original data has been gathered and a description of the features can be found in their *README.txt* and *features_info.txt* from the zip file referred to above. I will refer to that information only as it pertains to the changes I've made in this assignment.
 
-##Transforming the original dataset
+## Transforming the original dataset
 
 The file run_analysis.R performs the transformation from the original dataset to the final tidy.txt.
 
 These are the steps that were used to transform the data and some of the decisions I made regarding the more subjective areas of the assignment.
 
-##Preparation
+## Preparation
 Load the *reshape2* library as in order to use *melt* and *dcast* later on.
 
 Download and unzip the original data.
@@ -62,7 +62,7 @@ trainData <- read.table("./UCI HAR Dataset/train/X_train.txt")
 trainLabels <- read.table("./UCI HAR Dataset/train/y_train.txt")
 trainSubjects <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 ```
-###Combine the data into one table
+### Combine the data into one table
 First, the labels and subjects are appended as columns to their respective test or training data table. Then the test and training tables put together by appending the rows of the test data to the bottom of the training data table.
 
 ```r
@@ -104,7 +104,7 @@ meanStdData <- merge(meanStdData, activityLabelsTbl, by.x=67, by.y=1)
 meanStdData <- meanStdData[,2:69]
 ```
 
-##4 Appropriately label the data set with descriptive variable names.
+## 4 Appropriately label the data set with descriptive variable names.
 
 Tidy up the names a bit. 
 

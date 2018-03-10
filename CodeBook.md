@@ -6,7 +6,7 @@ Number of observations: 180
 Number of variables: 68
 
 ## Summary
-This is the Code Book for *tidy.txt*. The original data from which this dataset was derived is: [link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+This is the Code Book for *tidy.txt*. The original data from which this dataset was derived is here: [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 *tidy.txt* takes a subset of the variables in the original dataset and calculates the average of each variable for each activity and each subject. That is to say that each subject performed each of the 6 activities (e.g. WALKING, SITTING etc.) a number of times. For each one of the subjects, the tidy data set calculates the average value of each type of reading for each of the 6 activities.
 
@@ -14,11 +14,11 @@ A full description of how the data has been manipulated from the original datase
 
 ## Features
 
-subject
- : An integer between 1 and 30 identifying the subject performing the activity  
+**subject**  
+ An integer between 1 and 30 identifying the subject performing the activity  
 
-activity
- : One of the 6 activities that the subject was performing when the readings were taken
+**activity**  
+ One of the 6 activities that the subject was performing when the readings were taken
 * WALKING
 * WALKING_UPSTAIRS
 * WALKING_DOWNSTAIRS
@@ -44,7 +44,6 @@ The following text is from the original Data Set Description linked above. It de
 >These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 >
->
 * tBodyAcc-XYZ
 * tGravityAcc-XYZ
 * tBodyAccJerk-XYZ
@@ -67,21 +66,21 @@ The following text is from the original Data Set Description linked above. It de
 
 The set of variables that were estimated from these signals for the tidy dataset are: 
 
-mean: Mean value
-std: Standard deviation
+mean: Mean value  
+std: Standard deviation  
 
 For each of the above readings ending in XYZ would result in 6 features in the new tidy dataset. For example:
 tBodyGyroJerk-XYZ would become:
-*tBodyGyroJerk-mean-x
-*tBodyGyroJerk-mean-y
-*tBodyGyroJerk-mean-z
-*tBodyGyroJerk-std-x
-*tBodyGyroJerk-std-y
-*tBodyGyroJerk-std-z
+* tBodyGyroJerk-mean-x
+* tBodyGyroJerk-mean-y
+* tBodyGyroJerk-mean-z
+* tBodyGyroJerk-std-x
+* tBodyGyroJerk-std-y
+* tBodyGyroJerk-std-z
 
-Readings that don't end in XYZ would result in 2 features. For example:
-fBodyGyroJerkMag would become:
-*fBodyGyroJerkMag-mean
-*fBodyGyroJerkMag-std
+Readings that don't end in XYZ would result in 2 features. 
+For example *fBodyGyroJerkMag* would become:
+* fBodyGyroJerkMag-mean
+* fBodyGyroJerkMag-std
 
 For more information on the feature selection and variable name changes, please see the README file.
